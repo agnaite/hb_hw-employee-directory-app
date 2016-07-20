@@ -12,7 +12,7 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/employee_search")
+@app.route("/search")
 def get_employee_details():
     """this is the 'action' we use for our searches. It returns the employee details page """
 
@@ -40,4 +40,4 @@ def get_employee_details():
 
 if __name__ == "__main__":
     app.debug = True
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=6969)
